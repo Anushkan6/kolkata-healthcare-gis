@@ -49,7 +49,7 @@ col1, col2 = st.columns([3, 1])
 
 with col1:
     center = [grid.geometry.centroid.y.mean(), grid.geometry.centroid.x.mean()]
-    m = folium.Map(location=center, zoom_start=12, tiles="CartoDB positron")
+    m = folium.Map(location=center, zoom_start=12, tiles="OpenStreetMap")
 
     if layer_choice == "Travel time to nearest facility":
         col = "travel_time_min"
